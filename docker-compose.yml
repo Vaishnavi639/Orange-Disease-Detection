@@ -1,0 +1,59 @@
+version: '3'
+
+services:
+  orange-disease-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./saved_models:/app/saved_models
+      - ./frontend:/app/frontend
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=production
+    restart: unless-stopped
+    networks:
+      - orange-disease-network
+
+  mlflow:
+    image: python:3.9-slim
+    command: >
+      bash -c "pip install mlflow psycopg2-binary boto3 && 
+              mlflow server 
+              --host 0.0.0.0 
+              --port 8000 
+              --backend-store-uri postgresql://mlflow:mlflow@db:5432/mlflow 
+              --default-artifact-root s3://mlflow-artifacts/
+              "
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION:-us-east-1}
+    restart: unless-stopped
+    networks:
+      - orange-disease-network
+
+  db:
+    image: postgres:13
+    environment:
+      - POSTGRES_USER=mlflow
+      - POSTGRES_PASSWORD=mlflow
+      - POSTGRES_DB=mlflow
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
+    networks:
+      - orange-disease-network
+
+networks:
+  orange-disease-network:
+    driver: bridge
+
+volumes:
+  postgres-data:
