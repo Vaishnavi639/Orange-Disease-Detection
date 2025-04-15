@@ -1,0 +1,47 @@
+# Git files
+.git
+.github
+.gitignore
+
+# Python cache
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.Python
+**/*.so
+
+# Development and test files
+notebooks/
+tests/
+data/
+scripts/
+predictions/
+confusion_matrix.png
+evaluation_metrics.json
+project_structure.sh
+*.sh
+*.log
+
+# Ignore documentation and temp files
+README.md
+*.md
+*~
+*.bak
+*.tmp
+
+# Images or media not needed in container
+*.jpg
+*.png
+
+# Environment and virtualenvs
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE/editor config
+.idea/
+.vscode/
+

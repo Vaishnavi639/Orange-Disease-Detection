@@ -1,41 +1,36 @@
-# Build stage
-FROM python:3.9-slim AS builder
-
-WORKDIR /app
-
-# Install build dependencies
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends gcc build-essential && \
-    apt-get clean && rm -rf /var/lib/apt/lists/*
-
-# Copy requirements and install dependencies as wheels
-COPY requirements.txt .
-RUN pip wheel --no-cache-dir --no-deps --wheel-dir /wheels -r requirements.txt
-
-# Final stage
 FROM python:3.9-slim
 
+LABEL maintainer="Orange Disease Detection"
+ENV PYTHONUNBUFFERED=1
+
 WORKDIR /app
 
-# Install runtime dependencies
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends libgomp1 && \
-    apt-get clean && rm -rf /var/lib/apt/lists/*
+COPY requirements.txt .
 
-# Copy wheels and install them
-COPY --from=builder /wheels /wheels
-COPY --from=builder /app/requirements.txt .
-RUN pip install --no-cache /wheels/*
+# Install dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        gcc \
+    && pip install --no-cache-dir --upgrade pip \
+    && pip install --no-cache-dir -r requirements.txt \
+    && apt-get purge -y --auto-remove gcc \
+    && rm -rf /var/lib/apt/lists/* /root/.cache
 
-# Copy your full application
-COPY . .
+# Copy app files (excluding unnecessary images or files)
+COPY app.py .
+COPY config ./config
+COPY utils ./utils
+COPY models ./models
+COPY saved_models ./saved_models
+COPY frontend ./frontend
 
-# Expose the port if running a web app
+# Remove large unnecessary image if exists
+RUN rm -f frontend/uploaded_image.jpg
+
+# Create non-root user
+RUN adduser --disabled-password --no-create-home appuser
+USER appuser
+
 EXPOSE 5000
 
-# Set environment variable
-ENV PORT=5000
-
-# Command to run the application
 CMD ["python", "app.py"]
 
