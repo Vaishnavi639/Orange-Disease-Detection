@@ -1,0 +1,11 @@
+{
+    "file_name": "1.jpg",
+    "predicted_class": "grenning",
+    "confidence": 0.9824241995811462,
+    "probabilities": {
+        "blackspot": 0.017394892871379852,
+        "canker": 0.00014469330199062824,
+        "fresh": 3.6287590774009004e-05,
+        "grenning": 0.9824241995811462
+    }
+}

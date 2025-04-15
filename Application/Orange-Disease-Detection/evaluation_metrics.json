@@ -1,0 +1,18 @@
+{
+    "accuracy": 0.9393939393939394,
+    "precision_macro": 0.933300395256917,
+    "recall_macro": 0.9356060606060606,
+    "f1_score_macro": 0.9342851592851593,
+    "blackspot_precision": 0.8695652173913043,
+    "blackspot_recall": 0.9090909090909091,
+    "blackspot_f1_score": 0.8888888888888888,
+    "canker_precision": 0.8636363636363636,
+    "canker_recall": 0.8636363636363636,
+    "canker_f1_score": 0.8636363636363636,
+    "fresh_precision": 1.0,
+    "fresh_recall": 0.9696969696969697,
+    "fresh_f1_score": 0.9846153846153847,
+    "grenning_precision": 1.0,
+    "grenning_recall": 1.0,
+    "grenning_f1_score": 1.0
+}

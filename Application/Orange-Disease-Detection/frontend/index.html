@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Leaf Disease Detection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"> <!-- Use main UI CSS -->
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Orange Leaf Disease Detection</h1>
+        <div class="upload-box">
+            <input type="file" id="imageInput" accept="image/*">
+            <br>
+            <button onclick="predictDisease()">Analyze</button>
+        </div>
+        <div id="preview" class="preview"></div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

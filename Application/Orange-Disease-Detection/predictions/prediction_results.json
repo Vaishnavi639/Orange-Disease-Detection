@@ -1,0 +1,365 @@
+[
+    {
+        "file_name": "f(1).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9997617602348328,
+        "probabilities": {
+            "blackspot": 4.8208871703536715e-06,
+            "canker": 0.00020927113655488938,
+            "fresh": 0.9997617602348328,
+            "grenning": 2.4182629204005934e-05
+        }
+    },
+    {
+        "file_name": "f(10).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9999028444290161,
+        "probabilities": {
+            "blackspot": 2.385190327913733e-06,
+            "canker": 5.735707964049652e-05,
+            "fresh": 0.9999028444290161,
+            "grenning": 3.735087739187293e-05
+        }
+    },
+    {
+        "file_name": "f(11).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9999518394470215,
+        "probabilities": {
+            "blackspot": 4.870901193498867e-06,
+            "canker": 3.0925613828003407e-05,
+            "fresh": 0.9999518394470215,
+            "grenning": 1.2355700164334849e-05
+        }
+    },
+    {
+        "file_name": "f(12).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9994297623634338,
+        "probabilities": {
+            "blackspot": 2.4183844288927503e-05,
+            "canker": 0.0004046092217322439,
+            "fresh": 0.9994297623634338,
+            "grenning": 0.0001414062426192686
+        }
+    },
+    {
+        "file_name": "f(13).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9996521472930908,
+        "probabilities": {
+            "blackspot": 6.861009751446545e-06,
+            "canker": 0.0003334154316689819,
+            "fresh": 0.9996521472930908,
+            "grenning": 7.482090495614102e-06
+        }
+    },
+    {
+        "file_name": "f(14).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9995174407958984,
+        "probabilities": {
+            "blackspot": 4.132054891670123e-05,
+            "canker": 0.00042301826761104167,
+            "fresh": 0.9995174407958984,
+            "grenning": 1.8179420294472948e-05
+        }
+    },
+    {
+        "file_name": "f(15).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9999706745147705,
+        "probabilities": {
+            "blackspot": 1.5703562894486822e-08,
+            "canker": 4.3986094055981084e-07,
+            "fresh": 0.9999706745147705,
+            "grenning": 2.888926610467024e-05
+        }
+    },
+    {
+        "file_name": "f(16).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9999814033508301,
+        "probabilities": {
+            "blackspot": 1.6507333100435062e-07,
+            "canker": 1.2324831004661974e-05,
+            "fresh": 0.9999814033508301,
+            "grenning": 6.161813416838413e-06
+        }
+    },
+    {
+        "file_name": "f(17).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9999727010726929,
+        "probabilities": {
+            "blackspot": 1.967837761185365e-06,
+            "canker": 9.495322956354357e-06,
+            "fresh": 0.9999727010726929,
+            "grenning": 1.573645022290293e-05
+        }
+    },
+    {
+        "file_name": "f(18).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9964809417724609,
+        "probabilities": {
+            "blackspot": 2.8757551262970082e-05,
+            "canker": 8.7496628111694e-06,
+            "fresh": 0.9964809417724609,
+            "grenning": 0.003481584135442972
+        }
+    },
+    {
+        "file_name": "f(19).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9999713897705078,
+        "probabilities": {
+            "blackspot": 3.9699060039311007e-07,
+            "canker": 2.4424180082860403e-05,
+            "fresh": 0.9999713897705078,
+            "grenning": 3.82000143872574e-06
+        }
+    },
+    {
+        "file_name": "f(2).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9973134398460388,
+        "probabilities": {
+            "blackspot": 0.00017400852811988443,
+            "canker": 0.0024757711216807365,
+            "fresh": 0.9973134398460388,
+            "grenning": 3.668983845273033e-05
+        }
+    },
+    {
+        "file_name": "f(20).png",
+        "predicted_class": "fresh",
+        "confidence": 0.5457891821861267,
+        "probabilities": {
+            "blackspot": 0.030473805963993073,
+            "canker": 0.4225532114505768,
+            "fresh": 0.5457891821861267,
+            "grenning": 0.0011837708298116922
+        }
+    },
+    {
+        "file_name": "f(21).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9657739400863647,
+        "probabilities": {
+            "blackspot": 0.007431583479046822,
+            "canker": 0.026484154164791107,
+            "fresh": 0.9657739400863647,
+            "grenning": 0.00031036080326884985
+        }
+    },
+    {
+        "file_name": "f(22).png",
+        "predicted_class": "fresh",
+        "confidence": 0.535698652267456,
+        "probabilities": {
+            "blackspot": 0.1872888207435608,
+            "canker": 0.2721949517726898,
+            "fresh": 0.535698652267456,
+            "grenning": 0.004817564506083727
+        }
+    },
+    {
+        "file_name": "f(23).png",
+        "predicted_class": "canker",
+        "confidence": 0.7627451419830322,
+        "probabilities": {
+            "blackspot": 0.14663845300674438,
+            "canker": 0.7627451419830322,
+            "fresh": 0.08758196234703064,
+            "grenning": 0.0030343898106366396
+        }
+    },
+    {
+        "file_name": "f(24).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9991081357002258,
+        "probabilities": {
+            "blackspot": 0.0001808055822039023,
+            "canker": 0.00011351442662999034,
+            "fresh": 0.9991081357002258,
+            "grenning": 0.0005975854583084583
+        }
+    },
+    {
+        "file_name": "f(25).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9996812343597412,
+        "probabilities": {
+            "blackspot": 2.2015314243617468e-05,
+            "canker": 0.0002799036737997085,
+            "fresh": 0.9996812343597412,
+            "grenning": 1.6778405552031472e-05
+        }
+    },
+    {
+        "file_name": "f(26).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9999327659606934,
+        "probabilities": {
+            "blackspot": 4.576311312121106e-06,
+            "canker": 6.017316263751127e-05,
+            "fresh": 0.9999327659606934,
+            "grenning": 2.5453311991441296e-06
+        }
+    },
+    {
+        "file_name": "f(27).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9995405673980713,
+        "probabilities": {
+            "blackspot": 7.22307013347745e-05,
+            "canker": 0.0003765695437323302,
+            "fresh": 0.9995405673980713,
+            "grenning": 1.0699390259105712e-05
+        }
+    },
+    {
+        "file_name": "f(28).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9998525381088257,
+        "probabilities": {
+            "blackspot": 3.710281816893257e-06,
+            "canker": 9.797554230317473e-05,
+            "fresh": 0.9998525381088257,
+            "grenning": 4.5766108087264e-05
+        }
+    },
+    {
+        "file_name": "f(29).png",
+        "predicted_class": "fresh",
+        "confidence": 0.8286344408988953,
+        "probabilities": {
+            "blackspot": 0.013557118363678455,
+            "canker": 0.15757359564304352,
+            "fresh": 0.8286344408988953,
+            "grenning": 0.0002348481211811304
+        }
+    },
+    {
+        "file_name": "f(3).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9987479448318481,
+        "probabilities": {
+            "blackspot": 6.0863065300509334e-05,
+            "canker": 0.0007608695887029171,
+            "fresh": 0.9987479448318481,
+            "grenning": 0.0004303583409637213
+        }
+    },
+    {
+        "file_name": "f(30).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9983569979667664,
+        "probabilities": {
+            "blackspot": 7.575328345410526e-05,
+            "canker": 0.0015251024160534143,
+            "fresh": 0.9983569979667664,
+            "grenning": 4.2103467421839014e-05
+        }
+    },
+    {
+        "file_name": "f(31).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9999216794967651,
+        "probabilities": {
+            "blackspot": 1.3330997035154724e-06,
+            "canker": 4.348490620031953e-05,
+            "fresh": 0.9999216794967651,
+            "grenning": 3.347375968587585e-05
+        }
+    },
+    {
+        "file_name": "f(32).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9018116593360901,
+        "probabilities": {
+            "blackspot": 0.008817670866847038,
+            "canker": 0.08821368217468262,
+            "fresh": 0.9018116593360901,
+            "grenning": 0.0011569192865863442
+        }
+    },
+    {
+        "file_name": "f(33).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9996447563171387,
+        "probabilities": {
+            "blackspot": 7.288723281817511e-06,
+            "canker": 0.0002644618507474661,
+            "fresh": 0.9996447563171387,
+            "grenning": 8.355212048627436e-05
+        }
+    },
+    {
+        "file_name": "f(4).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9965881109237671,
+        "probabilities": {
+            "blackspot": 9.702376701170579e-05,
+            "canker": 0.0027251127175986767,
+            "fresh": 0.9965881109237671,
+            "grenning": 0.0005897635128349066
+        }
+    },
+    {
+        "file_name": "f(5).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9939985275268555,
+        "probabilities": {
+            "blackspot": 0.0016405213391408324,
+            "canker": 0.004284897353500128,
+            "fresh": 0.9939985275268555,
+            "grenning": 7.599274249514565e-05
+        }
+    },
+    {
+        "file_name": "f(6).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9555925726890564,
+        "probabilities": {
+            "blackspot": 0.025425413623452187,
+            "canker": 0.0184894111007452,
+            "fresh": 0.9555925726890564,
+            "grenning": 0.0004926848923787475
+        }
+    },
+    {
+        "file_name": "f(7).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9999964237213135,
+        "probabilities": {
+            "blackspot": 9.776313447673601e-08,
+            "canker": 1.4706341744386009e-06,
+            "fresh": 0.9999964237213135,
+            "grenning": 2.0334366581664653e-06
+        }
+    },
+    {
+        "file_name": "f(8).png",
+        "predicted_class": "fresh",
+        "confidence": 0.999883770942688,
+        "probabilities": {
+            "blackspot": 2.782266619760776e-06,
+            "canker": 9.978574234992266e-05,
+            "fresh": 0.999883770942688,
+            "grenning": 1.3689361367141828e-05
+        }
+    },
+    {
+        "file_name": "f(9).png",
+        "predicted_class": "fresh",
+        "confidence": 0.9712662696838379,
+        "probabilities": {
+            "blackspot": 0.0030482241418212652,
+            "canker": 0.02554074116051197,
+            "fresh": 0.9712662696838379,
+            "grenning": 0.00014476958313025534
+        }
+    }
+]
