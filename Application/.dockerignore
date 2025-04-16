@@ -4,6 +4,8 @@
 .gitignore
 
 # Python cache
+__pycache__/
+.ipynb_checkpoints/
 **/__pycache__/
 **/*.pyc
 **/*.pyo
@@ -31,8 +33,11 @@ README.md
 *.tmp
 
 # Images or media not needed in container
-*.jpg
 *.png
+- *.jpg
++ !frontend/uploaded_image.jpg
++ *.jpg
+
 
 # Environment and virtualenvs
 .env
