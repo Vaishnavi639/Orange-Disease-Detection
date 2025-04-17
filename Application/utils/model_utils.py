@@ -117,16 +117,22 @@ def evaluate_model(model, test_generator, class_names):
     plt.xlabel('Predicted label')
     
     # Save the confusion matrix
-    plt.savefig('confusion_matrix.png')
-    
-    metrics = {
-    'accuracy': float(report['accuracy']),
-    'precision_macro': float(report['macro avg']['precision']),
-    'recall_macro': float(report['macro avg']['recall']),
-    'f1_score_macro': float(report['macro avg']['f1-score']),
-}
+    confusion_matrix_path = 'confusion_matrix.png'  # Path to your confusion matrix file
+    plt.savefig(confusion_matrix_path)
+    plt.close()  # Close the plot to avoid issues
 
-# Flatten per-class metrics
+    # Log the confusion matrix as an artifact in MLflow
+    mlflow.log_artifact(confusion_matrix_path)
+    
+    # Create metrics dictionary
+    metrics = {
+        'accuracy': float(report['accuracy']),
+        'precision_macro': float(report['macro avg']['precision']),
+        'recall_macro': float(report['macro avg']['recall']),
+        'f1_score_macro': float(report['macro avg']['f1-score']),
+    }
+
+    # Flatten per-class metrics
     for class_name in class_names:
         metrics[f"{class_name}_precision"] = float(report[class_name]['precision'])
         metrics[f"{class_name}_recall"] = float(report[class_name]['recall'])
