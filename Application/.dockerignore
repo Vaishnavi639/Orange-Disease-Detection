@@ -1,9 +1,9 @@
-# Git files
+
 .git
 .github
 .gitignore
 
-# Python cache
+
 __pycache__/
 .ipynb_checkpoints/
 **/__pycache__/
@@ -13,7 +13,7 @@ __pycache__/
 **/.Python
 **/*.so
 
-# Development and test files
+
 notebooks/
 tests/
 data/
@@ -25,21 +25,21 @@ project_structure.sh
 *.sh
 *.log
 
-# Ignore documentation and temp files
+
 README.md
 *.md
 *~
 *.bak
 *.tmp
 
-# Images or media not needed in container
+
 *.png
 - *.jpg
 + !frontend/uploaded_image.jpg
 + *.jpg
 
 
-# Environment and virtualenvs
+
 .env
 .venv
 env/
