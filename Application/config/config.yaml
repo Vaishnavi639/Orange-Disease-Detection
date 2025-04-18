@@ -1,34 +1,31 @@
 model:
-  architecture: "vgg"  # Change from efficientnet to vgg
-  version: "16"  # Choose '16' or '19'
-  img_size: 224                 # Input image size
-  num_classes: 4                # Number of disease classes
+  architecture: "vgg"
+  version: "16"
+  img_size: 224
+  num_classes: 4
 
-# Training Configuration
 training:
   batch_size: 32
   epochs: 10
-  
   learning_rate: 0.001
-  optimizer: "adam"             # Options: adam, sgd
+  optimizer: "adam"
   loss: "categorical_crossentropy"
   early_stopping_patience: 5
   reduce_lr_patience: 3
   reduce_lr_factor: 0.2
 
-# Data Configuration
 data:
   train_path: "data/train"
   val_path: "data/val"
   test_path: "data/test"
   augmentation: true
 
-# Paths Configuration
 paths:
   model_save_path: "saved_models/"
   logs_path: "logs/"
 
-# Experiment tracking
 mlflow:
-  tracking_uri: "mlruns"
+  tracking_uri: "${MLFLOW_TRACKING_URI:-http://mlflow:8000}"
   experiment_name: "orange_disease_detection"
+  artifact_location: "${MLFLOW_ARTIFACT_URI:-}"
+~                                                
