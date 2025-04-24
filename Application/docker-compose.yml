@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: vaishnavi639/orange-disease-detection:latest
+    image: vaishnavi639/orange-disease-detection:v1
     ports:
       - "5000:5000"
     volumes:
