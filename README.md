@@ -29,7 +29,7 @@ This project is a complete MLOps pipeline for detecting orange leaf diseases usi
 ├── docker-compose.yml      # Multi-container setup
 └── README.md
 ```
-
+![Image](https://github.com/user-attachments/assets/d986b4d1-790b-4da8-9766-fb7c12e2bdcf)
 ---
 
 ## 🐳 Docker Setup (Local)
@@ -124,4 +124,6 @@ You can view runs at: [http://localhost:8000](http://localhost:8000)
 ## 📜 License
 
 This project is licensed under the MIT License.
+
+
 
