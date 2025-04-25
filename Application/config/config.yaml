@@ -25,7 +25,7 @@ paths:
   logs_path: "logs/"
 
 mlflow:
-  tracking_uri: "${MLFLOW_TRACKING_URI:-http://mlflow:8000}"
-  experiment_name: "orange_disease_detection"
-  artifact_location: "${MLFLOW_ARTIFACT_URI:-}"
-~                                                
+  tracking_uri: "file:./mlruns"
+  experiment_name: "OrangeDiseaseClassification"
+  artifact_location: "artifacts/"                                  
+  run_name: orange_run
