@@ -19,4 +19,4 @@ __pycache__/
 .env
 *.env
 
-my_venv
+venv/
