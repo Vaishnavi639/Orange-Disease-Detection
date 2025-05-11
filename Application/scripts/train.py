@@ -76,7 +76,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", default="config/config.yaml", help="Path to config file")
     args = parser.parse_args()
-    train_model(args.config
+    train_model(args.config)
 
  
 
