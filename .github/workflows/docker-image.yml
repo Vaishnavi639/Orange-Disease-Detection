@@ -15,9 +15,9 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: pull the Docker image
-      run: docker pull omsantoshharsule/orangemodel:v3
+      run: docker pull vaishnavi639/orange-disease-detection:v3
 
     - name: run docker name
-      run: docker run -d -p 5000:5000 -p 8000:8000 omsantoshharsule/orangemodel:v3
+      run: docker run -d -p 5000:5000 -p 8000:8000 vaishnavi639/orange-disease-detection:v3
   
     
