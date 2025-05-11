@@ -17,7 +17,6 @@ __pycache__/
 notebooks/
 tests/
 data/
-scripts/
 predictions/
 confusion_matrix.png
 evaluation_metrics.json
