@@ -62,7 +62,7 @@ def train_model(config_path):
         os.makedirs(config['paths']['model_save_path'], exist_ok=True)
         model.save(os.path.join(config['paths']['model_save_path'], 'final_model.h5'))
 
-         Log class names as artifact
+         #Log class names as artifact
         class_names_path = os.path.join(config['paths']['model_save_path'], 'class_names.txt')
         with open(class_names_path, 'w') as f:
             for name in class_names:
