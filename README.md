@@ -26,7 +26,6 @@ This project is a complete MLOps pipeline for detecting orange leaf diseases usi
 ├── utils/                  # Data preprocessing, model utilities
 ├── scripts/train.py        # Training script using MLflow tracking
 ├── Dockerfile              # For the app (Web + Model)
-├── docker-compose.yml      # Multi-container setup
 └── README.md
 ```
 ![Image](https://github.com/user-attachments/assets/d986b4d1-790b-4da8-9766-fb7c12e2bdcf)
