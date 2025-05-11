@@ -27,5 +27,5 @@ USER root
 RUN mkdir -p /app/frontend/uploads && chown -R appuser:appuser /app/frontend/uploads
 USER appuser
 
-EXPOSE 5000
+EXPOSE 5000 8000
 CMD ["python", "-u", "app.py"]
