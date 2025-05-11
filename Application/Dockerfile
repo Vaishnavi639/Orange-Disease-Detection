@@ -28,4 +28,5 @@ RUN mkdir -p /app/frontend/uploads && chown -R appuser:appuser /app/frontend/upl
 USER appuser
 
 EXPOSE 5000 8000
-CMD ["python", "-u", "app.py"]
+CMD ["sh", "-c", "mlflow server --host 0.0.0.0 --port 8000 & python -u app.py"]
+
