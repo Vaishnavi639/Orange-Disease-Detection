@@ -16,7 +16,7 @@ from utils.model_utils import load_config, create_callbacks, evaluate_model
 def train_model(config_path):
     """Train the model based on the provided config."""
     config = load_config(config_path)
-<<<<<<< HEAD
+
 
     # Make sure tracking directory exists if using file-based MLflow store
     os.makedirs(config['mlflow']['artifact_location'], exist_ok=True)
@@ -77,6 +77,6 @@ if __name__ == "__main__":
     parser.add_argument("--config", default="config/config.yaml", help="Path to config file")
     args = parser.parse_args()
     train_model(args.config
-=======
+
  
 
