@@ -108,7 +108,7 @@ It logs:
 - Model artifacts
 into MLflow automatically.
 
-You can view runs at: [http://localhost:8000](http://localhost:8000)
+You can view runs at: mlfow ui
 
 ---
 
