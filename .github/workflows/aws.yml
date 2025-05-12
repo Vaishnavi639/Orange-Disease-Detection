@@ -37,6 +37,7 @@ jobs:
           IMAGE_TAG: ${{ github.sha }}
         run: |
           IMAGE=$DOCKERHUB_USERNAME/$IMAGE_NAME:$IMAGE_TAG
+          cd Application
           docker build -t $IMAGE .
           docker push $IMAGE
           echo "image=$IMAGE" >> $GITHUB_OUTPUT
