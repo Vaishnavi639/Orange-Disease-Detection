@@ -1,23 +1,23 @@
- name: Docker Image CI 
+ # name: Docker Image CI 
 
- on:
-   push:
-     branches: [ "main" ]
-   pull_request:
-     branches: [ "main" ]
+ # on:
+ #   push:
+ #     branches: [ "main" ]
+ #   pull_request:
+ #     branches: [ "main" ]
 
- jobs:
+ # jobs:
 
-   build:
+ #   build:
 
-     runs-on: self-hosted
+ #     runs-on: self-hosted
 
-     steps:
-     - uses: actions/checkout@v4
-     - name: pull the Docker image
-       run: docker pull vaishnavi639/orange-disease-detection:f09a2b464802e1c8e64a4e8dec2692eb5ab6fc18
+ #     steps:
+ #     - uses: actions/checkout@v4
+ #     - name: pull the Docker image
+ #       run: docker pull vaishnavi639/orange-disease-detection:f09a2b464802e1c8e64a4e8dec2692eb5ab6fc18
 
-     - name: run docker name
-       run: docker run -d -p 5000:5000 -p 8000:8000 vaishnavi639/orange-disease-detection:f09a2b464802e1c8e64a4e8dec2692eb5ab6fc18
+ #     - name: run docker name
+ #       run: docker run -d -p 5000:5000 -p 8000:8000 vaishnavi639/orange-disease-detection:f09a2b464802e1c8e64a4e8dec2692eb5ab6fc18
   
     
