@@ -1,6 +1,6 @@
 # 🍊 Orange Disease Detection - MLOps Project
 
-This project is a complete MLOps pipeline for detecting orange leaf diseases using a Convolutional Neural Network (CNN) model. It integrates MLflow for experiment tracking and model versioning, a Web UI built with Flask for user interaction, and uses Docker Compose to containerize the entire system. The solution is production-ready and deployable on AWS ECS.
+This project is a complete MLOps pipeline for detecting orange leaf diseases using a Convolutional Neural Network (CNN) model. It integrates MLflow for experiment tracking and model versioning, a Web UI built with Flask for user interaction, and uses Docker to containerize the entire system. The solution is production-ready and deployable on AWS ECS.
 
 ---
 
@@ -10,7 +10,6 @@ This project is a complete MLOps pipeline for detecting orange leaf diseases usi
 - 📦 **Dockerized** for scalable deployment
 - 🚀 **MLflow** integration for experiment tracking
 - 💽 **Flask Web UI** to upload images and get predictions
-- 🔀 **Docker Compose** for local orchestration
 - ☁️ **ECS-ready** architecture for cloud deployment
 
 ---
@@ -44,11 +43,6 @@ This project is a complete MLOps pipeline for detecting orange leaf diseases usi
 mkdir -p mlflow-data frontend/uploads
 ```
 
-### 🔥 Build and Run
-
-```bash
-docker-compose up --build
-```
 
 ### ✅ Services
 
