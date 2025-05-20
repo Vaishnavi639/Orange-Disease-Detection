@@ -113,7 +113,8 @@ You can view runs at: mlfow ui
 3. Model returns prediction: Healthy / Disease
 4. Result displayed on frontend
 
-## Demo Video:- https://www.linkedin.com/posts/vaishnavi-pangare_machinelearning-mlops-agriculturaltech-activity-7329440262294777856-DKeV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD6p3zABG1SQAf1_C9CjarSAMMth1ind0wo
+## Demo Video:-
+https://www.linkedin.com/posts/vaishnavi-pangare_machinelearning-mlops-agriculturaltech-activity-7329440262294777856-DKeV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD6p3zABG1SQAf1_C9CjarSAMMth1ind0wo
 
 
 ## 📜 License
